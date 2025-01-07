@@ -1,0 +1,16 @@
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\bin\Debug\net8.0-windows\SistemaCampeonato.exe
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\bin\Debug\net8.0-windows\SistemaCampeonato.deps.json
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\bin\Debug\net8.0-windows\SistemaCampeonato.runtimeconfig.json
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\bin\Debug\net8.0-windows\SistemaCampeonato.dll
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\bin\Debug\net8.0-windows\SistemaCampeonato.pdb
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.Form1.resources
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.AssemblyInfo.cs
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.dll
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\refint\SistemaCampeonato.dll
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.pdb
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.genruntimeconfig.cache
+C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\ref\SistemaCampeonato.dll
