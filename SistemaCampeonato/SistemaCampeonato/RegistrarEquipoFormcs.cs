@@ -16,25 +16,39 @@ namespace SistemaCampeonato
 
         private void btnGuardarEquipo_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtIdEquipo.Text) || string.IsNullOrEmpty(txtNombreEquipo.Text) || string.IsNullOrEmpty(txtFacultad.Text))
+            if (string.IsNullOrEmpty(txtIdEquipo.Text) ||
+                string.IsNullOrEmpty(txtNombreEquipo.Text) ||
+                string.IsNullOrEmpty(txtFacultad.Text))
             {
                 MessageBox.Show("Por favor complete todos los campos.");
                 return;
             }
 
-            var equipo = new Equipo
-            {
-                IdEquipo = int.Parse(txtIdEquipo.Text),
-                Nombre = txtNombreEquipo.Text,
-                Facultad = txtFacultad.Text
-            };
+            var equipo = new Equipo(
+                int.Parse(txtIdEquipo.Text),
+                txtNombreEquipo.Text,
+                txtFacultad.Text
+            );
 
             equipos.Add(equipo);
             MessageBox.Show("Equipo registrado correctamente.");
             this.Close();
         }
 
+        private void btnAgregarJugador_Click(object sender, EventArgs e)
+        {
+            using (var form = new RegistrarJugadorForm(equipos))
+            {
+                form.ShowDialog();
+            }
+        }
+
         private void RegistrarEquipoForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFacultad_TextChanged(object sender, EventArgs e)
         {
 
         }

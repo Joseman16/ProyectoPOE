@@ -13,21 +13,30 @@
             // 
             // dgvTablaPosiciones
             // 
-            dgvTablaPosiciones.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvTablaPosiciones.Location = new Point(20, 20);
+            dgvTablaPosiciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTablaPosiciones.Location = new Point(12, 12);
             dgvTablaPosiciones.Name = "dgvTablaPosiciones";
-            dgvTablaPosiciones.Size = new Size(500, 400);
+            dgvTablaPosiciones.Size = new Size(360, 237);
             dgvTablaPosiciones.TabIndex = 0;
             // 
             // TablaPosicionesForm
             // 
-            ClientSize = new Size(600, 450);
+            ClientSize = new Size(384, 261);
             Controls.Add(dgvTablaPosiciones);
             Name = "TablaPosicionesForm";
             Text = "Tabla de Posiciones";
             Load += TablaPosicionesForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvTablaPosiciones).EndInit();
             ResumeLayout(false);
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
         }
     }
 }

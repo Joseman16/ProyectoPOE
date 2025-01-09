@@ -27,3 +27,11 @@ C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonat
 C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.pdb
 C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.RegistrarPartidoForm.resources
 C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.TablaPosicionesForm.resources
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.RegistrarJugadorForm.resources
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\bin\Debug\net8.0-windows\SistemaCampeonato.exe
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\bin\Debug\net8.0-windows\SistemaCampeonato.deps.json
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\bin\Debug\net8.0-windows\SistemaCampeonato.runtimeconfig.json
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\bin\Debug\net8.0-windows\SistemaCampeonato.dll
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\bin\Debug\net8.0-windows\SistemaCampeonato.pdb
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.genruntimeconfig.cache
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\ref\SistemaCampeonato.dll
