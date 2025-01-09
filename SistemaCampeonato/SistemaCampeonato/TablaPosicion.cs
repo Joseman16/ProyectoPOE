@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SistemaCampeonato
 {
-    internal class TablaPosicion
+    public class TablaPosicion
     {
         // Propiedad para el equipo asociado (de tipo Equipo)
         public Equipo NombreEquipo { get; set; }

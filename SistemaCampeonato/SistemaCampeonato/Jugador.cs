@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaCampeonato
 {
-    internal class Jugador
+    public class Jugador
     {
         // Propiedad para la cédula del jugador
         public string Cedula { get; set; }

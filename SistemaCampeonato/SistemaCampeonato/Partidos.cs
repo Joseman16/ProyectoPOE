@@ -2,7 +2,7 @@
 
 namespace SistemaCampeonato
 {
-    internal class Partidos
+    public class Partidos
     {
         // Propiedad para el ID del partido
         public int IdPartido { get; set; }

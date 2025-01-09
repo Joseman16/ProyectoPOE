@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\source\\repos\\SistemaCampeonato\\SistemaCampeonato\\SistemaCampeonato.csproj": {}
+    "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\SistemaCampeonato.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\source\\repos\\SistemaCampeonato\\SistemaCampeonato\\SistemaCampeonato.csproj": {
+    "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\SistemaCampeonato.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\SistemaCampeonato\\SistemaCampeonato\\SistemaCampeonato.csproj",
+        "projectUniqueName": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\SistemaCampeonato.csproj",
         "projectName": "SistemaCampeonato",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\SistemaCampeonato\\SistemaCampeonato\\SistemaCampeonato.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\source\\repos\\SistemaCampeonato\\SistemaCampeonato\\obj\\",
+        "projectPath": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\SistemaCampeonato.csproj",
+        "packagesPath": "C:\\Users\\Josman\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Josman\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

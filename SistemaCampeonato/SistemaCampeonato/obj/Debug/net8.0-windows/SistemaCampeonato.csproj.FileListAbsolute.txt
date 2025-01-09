@@ -14,3 +14,16 @@ C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-
 C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.pdb
 C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.genruntimeconfig.cache
 C:\Users\USER\source\repos\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\ref\SistemaCampeonato.dll
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.MainForm.resources
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.RegistrarEquipoForm.resources
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.csproj.GenerateResource.cache
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.AssemblyInfoInputs.cache
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.AssemblyInfo.cs
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.csproj.CoreCompileInputs.cache
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.sourcelink.json
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.dll
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\refint\SistemaCampeonato.dll
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.pdb
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.RegistrarPartidoForm.resources
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.TablaPosicionesForm.resources

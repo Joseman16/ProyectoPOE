@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaCampeonato
 {
-    internal class Equipo
+    public class Equipo
     {
         // Propiedades de la clase
         public int IdEquipo { get; set; }

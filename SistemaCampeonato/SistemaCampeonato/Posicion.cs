@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaCampeonato
 {
-    internal class Posicion
+    public class Posicion
     {
         public int Id { get; set; }
 
