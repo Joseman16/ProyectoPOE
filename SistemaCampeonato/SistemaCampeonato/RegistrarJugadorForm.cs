@@ -12,19 +12,30 @@ namespace SistemaCampeonato
         {
             InitializeComponent();
             this.equipos = equipos;
-            CargarEquipos();
-        }
 
+            CargarEquipos();
+            CargarPosiciones();
+        }
 
         private void CargarEquipos()
         {
-            cbEquipos.Items.Clear(); // Limpiar elementos previos del ComboBox
+            cbEquipos.Items.Clear();
             foreach (var equipo in equipos)
             {
-                cbEquipos.Items.Add(equipo);  // Agregar el objeto equipo (no solo su nombre)
+                cbEquipos.Items.Add(equipo);
             }
         }
 
+        private void CargarPosiciones()
+        {
+            cbPosicion.Items.Clear();
+            foreach (var posicion in PosicionesPredeterminadas.ListaPosiciones)
+            {
+                cbPosicion.Items.Add(posicion); // Carga las posiciones predefinidas
+            }
+
+            cbPosicion.DisplayMember = "Nombre"; // Mostrar solo el nombre en el ComboBox
+        }
 
         private void btnGuardarJugador_Click(object sender, EventArgs e)
         {
@@ -38,10 +49,10 @@ namespace SistemaCampeonato
                 return;
             }
 
-            // Buscar el equipo seleccionado por su nombre
-            var equipo = equipos.Find(e => e.NombreEquipo == cbEquipos.SelectedItem.ToString());
+            // Buscar el equipo seleccionado
+            var equipo = (Equipo)cbEquipos.SelectedItem;
 
-            // Crear el jugador con los datos proporcionados
+            // Crear el jugador
             var jugador = new Jugador(
                 txtCedula.Text,
                 txtNombre.Text,
@@ -59,7 +70,7 @@ namespace SistemaCampeonato
 
         private void RegistrarJugadorForm_Load(object sender, EventArgs e)
         {
-
+            // Cargar datos adicionales si es necesario
         }
     }
 }
