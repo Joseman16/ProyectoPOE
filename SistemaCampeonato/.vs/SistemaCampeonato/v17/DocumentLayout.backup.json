@@ -118,8 +118,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -166,14 +170,10 @@
               "RelativeDocumentMoniker": "SistemaCampeonato\\SistemaCampeonato.csproj",
               "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\SistemaCampeonato.csproj",
               "RelativeToolTip": "SistemaCampeonato\\SistemaCampeonato.csproj",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-01-09T09:19:06.309Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",

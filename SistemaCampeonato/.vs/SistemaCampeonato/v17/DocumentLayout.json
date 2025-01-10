@@ -118,24 +118,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegistrarJugadorForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarJugadorForm.cs",
-              "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarJugadorForm.cs",
-              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarJugadorForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaCampeonato\\RegistrarJugadorForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:28:06.941Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -146,8 +130,7 @@
               "RelativeToolTip": "SistemaCampeonato\\RegistrarJugadorForm.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAqwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:28:09.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T18:28:09.589Z"
             },
             {
               "$type": "Document",
@@ -159,8 +142,7 @@
               "RelativeToolTip": "SistemaCampeonato\\RegistrarJugadorForm.Designer.cs",
               "ViewState": "AgIAAIYAAAAAAAAAAAAqwKIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:28:27.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T18:28:27.567Z"
             },
             {
               "$type": "Document",
@@ -185,8 +167,7 @@
               "RelativeToolTip": "SistemaCampeonato\\PosicionesPredeterminadas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:36:50.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T04:36:50.98Z"
             },
             {
               "$type": "Document",
@@ -198,8 +179,7 @@
               "RelativeToolTip": "SistemaCampeonato\\Posicion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T16:49:42.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T16:49:42.945Z"
             },
             {
               "$type": "Document",
@@ -260,8 +240,7 @@
               "RelativeToolTip": "SistemaCampeonato\\MainForm.Designer.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAuwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T09:33:14.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T09:33:14.069Z"
             },
             {
               "$type": "Document",
@@ -273,7 +252,8 @@
               "RelativeToolTip": "SistemaCampeonato\\RegistrarResultadoForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T03:31:52.146Z"
+              "WhenOpened": "2025-01-10T03:31:52.146Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -321,7 +301,8 @@
               "RelativeToolTip": "SistemaCampeonato\\RegistrarPartidoForm.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAswCUAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:49:41.281Z"
+              "WhenOpened": "2025-01-09T18:49:41.281Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -333,7 +314,8 @@
               "RelativeToolTip": "SistemaCampeonato\\RegistrarEquipoFormcs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T10:19:48.467Z"
+              "WhenOpened": "2025-01-09T10:19:48.467Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -394,65 +376,82 @@
               "RelativeToolTip": "SistemaCampeonato\\TablaPosicionesForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T10:22:14.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T10:22:14.598Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistrarJugadorForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarJugadorForm.cs",
+              "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarJugadorForm.cs",
+              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarJugadorForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaCampeonato\\RegistrarJugadorForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T18:28:06.941Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "RegistrarResultadoForm.cs [Dise\u00F1o]",
+              "Title": "RegistrarResultadoForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarResultadoForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarResultadoForm.cs",
-              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarResultadoForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaCampeonato\\RegistrarResultadoForm.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarResultadoForm.cs [Design]",
+              "RelativeToolTip": "SistemaCampeonato\\RegistrarResultadoForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T03:21:32.625Z"
+              "WhenOpened": "2025-01-10T03:21:32.625Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MainForm.cs [Dise\u00F1o]",
+              "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\MainForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\MainForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaCampeonato\\MainForm.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\MainForm.cs [Design]",
+              "RelativeToolTip": "SistemaCampeonato\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T09:25:36.312Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "RegistrarPartidoForm.cs [Dise\u00F1o]",
+              "Title": "RegistrarPartidoForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarPartidoForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarPartidoForm.cs",
-              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarPartidoForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaCampeonato\\RegistrarPartidoForm.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarPartidoForm.cs [Design]",
+              "RelativeToolTip": "SistemaCampeonato\\RegistrarPartidoForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:49:39.825Z"
+              "WhenOpened": "2025-01-09T18:49:39.825Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "RegistrarEquipoFormcs.cs [Dise\u00F1o]",
+              "Title": "RegistrarEquipoFormcs.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarEquipoFormcs.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarEquipoFormcs.cs",
-              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarEquipoFormcs.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaCampeonato\\RegistrarEquipoFormcs.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarEquipoFormcs.cs [Design]",
+              "RelativeToolTip": "SistemaCampeonato\\RegistrarEquipoFormcs.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T10:19:42.422Z"
+              "WhenOpened": "2025-01-09T10:19:42.422Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "TablaPosicionesForm.cs [Dise\u00F1o]",
+              "Title": "TablaPosicionesForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\TablaPosicionesForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\TablaPosicionesForm.cs",
-              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\TablaPosicionesForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaCampeonato\\TablaPosicionesForm.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\TablaPosicionesForm.cs [Design]",
+              "RelativeToolTip": "SistemaCampeonato\\TablaPosicionesForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T09:40:24.357Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             }
           ]
         }
