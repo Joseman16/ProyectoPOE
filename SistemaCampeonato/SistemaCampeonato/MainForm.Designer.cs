@@ -2,15 +2,8 @@
 {
     partial class MainForm
     {
-        /// <summary>
-        /// Variable del diseñador.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Limpia los recursos que se están utilizando.
-        /// </summary>
-        /// <param name="disposing">True si los recursos administrados deben ser eliminados; de lo contrario, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,78 +13,79 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
-
-        /// <summary>
-        /// Método requerido para la compatibilidad con el Diseñador.
-        /// No se puede modificar el contenido de este método con el editor de código.
-        /// </summary>
         private void InitializeComponent()
         {
-            btnRegistrarEquipo = new Button();
-            btnRegistrarPartido = new Button();
-            btnTablaPosiciones = new Button();
-            btnRegistrarJugador = new Button();
-            SuspendLayout();
-            // 
-            // btnRegistrarEquipo
-            // 
-            btnRegistrarEquipo.Location = new Point(12, 12);
-            btnRegistrarEquipo.Name = "btnRegistrarEquipo";
-            btnRegistrarEquipo.Size = new Size(150, 40);
-            btnRegistrarEquipo.TabIndex = 0;
-            btnRegistrarEquipo.Text = "Registrar Equipo";
-            btnRegistrarEquipo.UseVisualStyleBackColor = true;
-            btnRegistrarEquipo.Click += btnRegistrarEquipo_Click;
-            // 
-            // btnRegistrarPartido
-            // 
-            btnRegistrarPartido.Location = new Point(12, 58);
-            btnRegistrarPartido.Name = "btnRegistrarPartido";
-            btnRegistrarPartido.Size = new Size(150, 40);
-            btnRegistrarPartido.TabIndex = 1;
-            btnRegistrarPartido.Text = "Registrar Partido";
-            btnRegistrarPartido.UseVisualStyleBackColor = true;
-            btnRegistrarPartido.Click += btnRegistrarPartido_Click;
-            // 
-            // btnTablaPosiciones
-            // 
-            btnTablaPosiciones.Location = new Point(12, 104);
-            btnTablaPosiciones.Name = "btnTablaPosiciones";
-            btnTablaPosiciones.Size = new Size(150, 40);
-            btnTablaPosiciones.TabIndex = 2;
-            btnTablaPosiciones.Text = "Ver Tabla de Posiciones";
-            btnTablaPosiciones.UseVisualStyleBackColor = true;
-            btnTablaPosiciones.Click += btnTablaPosiciones_Click;
-            // 
-            // btnRegistrarJugador
-            // 
-            btnRegistrarJugador.Location = new Point(12, 150);
-            btnRegistrarJugador.Name = "btnRegistrarJugador";
-            btnRegistrarJugador.Size = new Size(150, 40);
-            btnRegistrarJugador.TabIndex = 3;
-            btnRegistrarJugador.Text = "Registrar Jugador";
-            btnRegistrarJugador.UseVisualStyleBackColor = true;
-            btnRegistrarJugador.Click += btnRegistrarJugador_Click;
-            // 
-            // MainForm
-            // 
-            ClientSize = new Size(400, 600);
-            Controls.Add(btnRegistrarJugador);
-            Controls.Add(btnTablaPosiciones);
-            Controls.Add(btnRegistrarPartido);
-            Controls.Add(btnRegistrarEquipo);
-            Name = "MainForm";
-            Text = "Sistema Campeonato";
-            Load += MainForm_Load;
-            ResumeLayout(false);
-        }
+            this.btnRegistrarEquipo = new System.Windows.Forms.Button();
+            this.btnRegistrarPartido = new System.Windows.Forms.Button();
+            this.btnRegistrarJugador = new System.Windows.Forms.Button();
+            this.btnRegistrarResultado = new System.Windows.Forms.Button();
+            this.btnTablaPosiciones = new System.Windows.Forms.Button();
 
-        #endregion
+            this.SuspendLayout();
+
+            // btnRegistrarEquipo
+            this.btnRegistrarEquipo.Location = new System.Drawing.Point(30, 30);
+            this.btnRegistrarEquipo.Name = "btnRegistrarEquipo";
+            this.btnRegistrarEquipo.Size = new System.Drawing.Size(200, 40);
+            this.btnRegistrarEquipo.TabIndex = 0;
+            this.btnRegistrarEquipo.Text = "Registrar Equipo";
+            this.btnRegistrarEquipo.UseVisualStyleBackColor = true;
+            this.btnRegistrarEquipo.Click += new System.EventHandler(this.btnRegistrarEquipo_Click);
+
+            // btnRegistrarPartido
+            this.btnRegistrarPartido.Location = new System.Drawing.Point(30, 80);
+            this.btnRegistrarPartido.Name = "btnRegistrarPartido";
+            this.btnRegistrarPartido.Size = new System.Drawing.Size(200, 40);
+            this.btnRegistrarPartido.TabIndex = 1;
+            this.btnRegistrarPartido.Text = "Registrar Partido";
+            this.btnRegistrarPartido.UseVisualStyleBackColor = true;
+            this.btnRegistrarPartido.Click += new System.EventHandler(this.btnRegistrarPartido_Click);
+
+            // btnRegistrarJugador
+            this.btnRegistrarJugador.Location = new System.Drawing.Point(30, 130);
+            this.btnRegistrarJugador.Name = "btnRegistrarJugador";
+            this.btnRegistrarJugador.Size = new System.Drawing.Size(200, 40);
+            this.btnRegistrarJugador.TabIndex = 2;
+            this.btnRegistrarJugador.Text = "Registrar Jugador";
+            this.btnRegistrarJugador.UseVisualStyleBackColor = true;
+            this.btnRegistrarJugador.Click += new System.EventHandler(this.btnRegistrarJugador_Click);
+
+            // btnRegistrarResultado
+            this.btnRegistrarResultado.Location = new System.Drawing.Point(30, 180);
+            this.btnRegistrarResultado.Name = "btnRegistrarResultado";
+            this.btnRegistrarResultado.Size = new System.Drawing.Size(200, 40);
+            this.btnRegistrarResultado.TabIndex = 3;
+            this.btnRegistrarResultado.Text = "Registrar Resultado";
+            this.btnRegistrarResultado.UseVisualStyleBackColor = true;
+            this.btnRegistrarResultado.Click += new System.EventHandler(this.btnRegistrarResultado_Click);
+
+            // btnTablaPosiciones
+            this.btnTablaPosiciones.Location = new System.Drawing.Point(30, 230);
+            this.btnTablaPosiciones.Name = "btnTablaPosiciones";
+            this.btnTablaPosiciones.Size = new System.Drawing.Size(200, 40);
+            this.btnTablaPosiciones.TabIndex = 4;
+            this.btnTablaPosiciones.Text = "Tabla de Posiciones";
+            this.btnTablaPosiciones.UseVisualStyleBackColor = true;
+            this.btnTablaPosiciones.Click += new System.EventHandler(this.btnTablaPosiciones_Click);
+
+            // MainForm
+            this.ClientSize = new System.Drawing.Size(284, 311);
+            this.Controls.Add(this.btnRegistrarEquipo);
+            this.Controls.Add(this.btnRegistrarPartido);
+            this.Controls.Add(this.btnRegistrarJugador);
+            this.Controls.Add(this.btnRegistrarResultado);
+            this.Controls.Add(this.btnTablaPosiciones);
+            this.Name = "MainForm";
+            this.Text = "Sistema Campeonato";
+            this.Load += new System.EventHandler(this.MainForm_Load);
+
+            this.ResumeLayout(false);
+        }
 
         private System.Windows.Forms.Button btnRegistrarEquipo;
         private System.Windows.Forms.Button btnRegistrarPartido;
-        private System.Windows.Forms.Button btnTablaPosiciones;
         private System.Windows.Forms.Button btnRegistrarJugador;
+        private System.Windows.Forms.Button btnRegistrarResultado;
+        private System.Windows.Forms.Button btnTablaPosiciones;
     }
 }

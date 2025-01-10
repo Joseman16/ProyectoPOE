@@ -16,8 +16,7 @@ namespace SistemaCampeonato
 
         private void btnGuardarEquipo_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtIdEquipo.Text) ||
-                string.IsNullOrEmpty(txtNombreEquipo.Text) ||
+            if (string.IsNullOrEmpty(txtNombreEquipo.Text) ||
                 string.IsNullOrEmpty(txtFacultad.Text))
             {
                 MessageBox.Show("Por favor complete todos los campos.");
@@ -25,7 +24,7 @@ namespace SistemaCampeonato
             }
 
             var equipo = new Equipo(
-                int.Parse(txtIdEquipo.Text),
+
                 txtNombreEquipo.Text,
                 txtFacultad.Text
             );

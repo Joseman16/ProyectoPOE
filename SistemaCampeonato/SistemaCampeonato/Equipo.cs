@@ -14,6 +14,12 @@ namespace SistemaCampeonato
 
         public Equipo() { }
 
+        public Equipo(string nombreEquipo, string nombreFacultad)
+        {
+            NombreEquipo = nombreEquipo;
+            NombreFacultad = nombreFacultad;
+        }
+
         public Equipo(int idEquipo, string nombreEquipo, string nombreFacultad)
         {
             IdEquipo = idEquipo;
