@@ -12,6 +12,7 @@ namespace SistemaCampeonato
 
         public MainForm()
         {
+            this.BackColor = Color.LightBlue;
             InitializeComponent();
         }
 
@@ -22,6 +23,9 @@ namespace SistemaCampeonato
             {
                 tablaPosiciones.Add(new TablaPosicion(equipo));
             }
+
+            gif1.Image = Image.FromFile("C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\futbol.gif");
+            gif1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void btnRegistrarEquipo_Click(object sender, EventArgs e)
@@ -72,6 +76,12 @@ namespace SistemaCampeonato
             // Mostrar la tabla de posiciones
             TablaPosicionesForm tablaPosicionesForm = new TablaPosicionesForm(tablaPosiciones);
             tablaPosicionesForm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MasOpciones maOP = new MasOpciones();
+            maOP.ShowDialog();
         }
     }
 }

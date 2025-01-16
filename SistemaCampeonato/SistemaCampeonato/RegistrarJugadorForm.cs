@@ -1,20 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace SistemaCampeonato
 {
     public partial class RegistrarJugadorForm : Form
     {
+        private SqlConnection conn = new SqlConnection("Data Source=DESKTOP-E124J3L;Initial Catalog=SistemaCampeonato;Integrated Security=True");
         private List<Equipo> equipos;
 
         public RegistrarJugadorForm(List<Equipo> equipos)
         {
             InitializeComponent();
             this.equipos = equipos;
+        }
 
+        private void RegistrarJugadorForm_Load(object sender, EventArgs e)
+        {
             CargarEquipos();
             CargarPosiciones();
+            MessageBox.Show("Formulario cargado correctamente.");
         }
 
         private void CargarEquipos()
@@ -24,6 +30,7 @@ namespace SistemaCampeonato
             {
                 cbEquipos.Items.Add(equipo);
             }
+            cbEquipos.DisplayMember = "NombreEquipo";
         }
 
         private void CargarPosiciones()
@@ -31,10 +38,9 @@ namespace SistemaCampeonato
             cbPosicion.Items.Clear();
             foreach (var posicion in PosicionesPredeterminadas.ListaPosiciones)
             {
-                cbPosicion.Items.Add(posicion); // Carga las posiciones predefinidas
+                cbPosicion.Items.Add(posicion);
             }
-
-            cbPosicion.DisplayMember = "Nombre"; // Mostrar solo el nombre en el ComboBox
+            cbPosicion.DisplayMember = "Nombre";
         }
 
         private void btnGuardarJugador_Click(object sender, EventArgs e)
@@ -49,10 +55,7 @@ namespace SistemaCampeonato
                 return;
             }
 
-            // Buscar el equipo seleccionado
             var equipo = (Equipo)cbEquipos.SelectedItem;
-
-            // Crear el jugador
             var jugador = new Jugador(
                 txtCedula.Text,
                 txtNombre.Text,
@@ -61,16 +64,43 @@ namespace SistemaCampeonato
                 equipo
             );
 
-            // Agregar el jugador al equipo
+            insertarJugador(jugador);
             equipo.Jugadores.Add(jugador);
 
             MessageBox.Show("Jugador registrado correctamente.");
             this.Close();
         }
 
-        private void RegistrarJugadorForm_Load(object sender, EventArgs e)
+        private void insertarJugador(Jugador jugador)
         {
-            // Cargar datos adicionales si es necesario
+            try
+            {
+                conn.Open();
+                string query = @"
+                    INSERT INTO Jugador (Cedula, Nombre, Dorsal, IdPosicion, IdEquipo)
+                    VALUES (@Cedula, @Nombre, @Dorsal, @IdPosicion, @IdEquipo)";
+                using (var cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Cedula", jugador.Cedula);
+                    cmd.Parameters.AddWithValue("@Nombre", jugador.Nombre);
+                    cmd.Parameters.AddWithValue("@Dorsal", jugador.Dorsal);
+                    cmd.Parameters.AddWithValue("@IdPosicion", jugador.Posicion.Id);
+                    cmd.Parameters.AddWithValue("@IdEquipo", jugador.Equipo.IdEquipo);
+
+                    if (cmd.ExecuteNonQuery() > 0)
+                        MessageBox.Show("Jugador registrado correctamente en la base de datos.");
+                    else
+                        MessageBox.Show("No se pudo registrar el jugador en la base de datos.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al insertar el jugador: {ex.Message}");
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }

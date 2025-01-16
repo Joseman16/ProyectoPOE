@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
 
 namespace SistemaCampeonato
 {
@@ -95,5 +97,46 @@ namespace SistemaCampeonato
         {
 
         }
+
+        private void ObtenerEquipos()
+        {
+            equipos.Clear(); // Limpiar la lista de equipos antes de cargar nuevos
+
+            try
+            {
+                // Establecer conexión a la base de datos
+                using (var conn = new SqlConnection("Data Source=DESKTOP-E124J3L;Initial Catalog=SistemaCampeonato;Integrated Security=True"))
+                {
+                    conn.Open();
+
+                    // Consulta SQL para obtener todos los equipos
+                    string query = "SELECT IdEquipo, NombreEquipo FROM Equipo";
+
+                    // Crear el comando SQL
+                    using (var cmd = new SqlCommand(query, conn))
+                    {
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var equipo = new Equipo
+                                {
+                                    IdEquipo = reader.GetInt32(0),
+                                    NombreEquipo = reader.GetString(1)
+                                };
+
+                                // Agregar el equipo a la lista de equipos
+                                equipos.Add(equipo);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al obtener los equipos: {ex.Message}");
+            }
+        }
+
     }
 }

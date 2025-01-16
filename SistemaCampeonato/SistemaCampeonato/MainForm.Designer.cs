@@ -15,71 +15,99 @@
 
         private void InitializeComponent()
         {
-            this.btnRegistrarEquipo = new System.Windows.Forms.Button();
-            this.btnRegistrarPartido = new System.Windows.Forms.Button();
-            this.btnRegistrarJugador = new System.Windows.Forms.Button();
-            this.btnRegistrarResultado = new System.Windows.Forms.Button();
-            this.btnTablaPosiciones = new System.Windows.Forms.Button();
-
-            this.SuspendLayout();
-
+            btnRegistrarEquipo = new Button();
+            btnRegistrarPartido = new Button();
+            btnRegistrarJugador = new Button();
+            btnRegistrarResultado = new Button();
+            btnTablaPosiciones = new Button();
+            gif1 = new PictureBox();
+            btnOpciones = new Button();
+            ((System.ComponentModel.ISupportInitialize)gif1).BeginInit();
+            SuspendLayout();
+            // 
             // btnRegistrarEquipo
-            this.btnRegistrarEquipo.Location = new System.Drawing.Point(30, 30);
-            this.btnRegistrarEquipo.Name = "btnRegistrarEquipo";
-            this.btnRegistrarEquipo.Size = new System.Drawing.Size(200, 40);
-            this.btnRegistrarEquipo.TabIndex = 0;
-            this.btnRegistrarEquipo.Text = "Registrar Equipo";
-            this.btnRegistrarEquipo.UseVisualStyleBackColor = true;
-            this.btnRegistrarEquipo.Click += new System.EventHandler(this.btnRegistrarEquipo_Click);
-
+            // 
+            btnRegistrarEquipo.Location = new Point(21, 12);
+            btnRegistrarEquipo.Name = "btnRegistrarEquipo";
+            btnRegistrarEquipo.Size = new Size(200, 40);
+            btnRegistrarEquipo.TabIndex = 0;
+            btnRegistrarEquipo.Text = "Registrar Equipo";
+            btnRegistrarEquipo.UseVisualStyleBackColor = true;
+            btnRegistrarEquipo.Click += btnRegistrarEquipo_Click;
+            // 
             // btnRegistrarPartido
-            this.btnRegistrarPartido.Location = new System.Drawing.Point(30, 80);
-            this.btnRegistrarPartido.Name = "btnRegistrarPartido";
-            this.btnRegistrarPartido.Size = new System.Drawing.Size(200, 40);
-            this.btnRegistrarPartido.TabIndex = 1;
-            this.btnRegistrarPartido.Text = "Registrar Partido";
-            this.btnRegistrarPartido.UseVisualStyleBackColor = true;
-            this.btnRegistrarPartido.Click += new System.EventHandler(this.btnRegistrarPartido_Click);
-
+            // 
+            btnRegistrarPartido.Location = new Point(21, 104);
+            btnRegistrarPartido.Name = "btnRegistrarPartido";
+            btnRegistrarPartido.Size = new Size(200, 40);
+            btnRegistrarPartido.TabIndex = 1;
+            btnRegistrarPartido.Text = "Registrar Partido";
+            btnRegistrarPartido.UseVisualStyleBackColor = true;
+            btnRegistrarPartido.Click += btnRegistrarPartido_Click;
+            // 
             // btnRegistrarJugador
-            this.btnRegistrarJugador.Location = new System.Drawing.Point(30, 130);
-            this.btnRegistrarJugador.Name = "btnRegistrarJugador";
-            this.btnRegistrarJugador.Size = new System.Drawing.Size(200, 40);
-            this.btnRegistrarJugador.TabIndex = 2;
-            this.btnRegistrarJugador.Text = "Registrar Jugador";
-            this.btnRegistrarJugador.UseVisualStyleBackColor = true;
-            this.btnRegistrarJugador.Click += new System.EventHandler(this.btnRegistrarJugador_Click);
-
+            // 
+            btnRegistrarJugador.Location = new Point(21, 58);
+            btnRegistrarJugador.Name = "btnRegistrarJugador";
+            btnRegistrarJugador.Size = new Size(200, 40);
+            btnRegistrarJugador.TabIndex = 2;
+            btnRegistrarJugador.Text = "Registrar Jugador";
+            btnRegistrarJugador.UseVisualStyleBackColor = true;
+            btnRegistrarJugador.Click += btnRegistrarJugador_Click;
+            // 
             // btnRegistrarResultado
-            this.btnRegistrarResultado.Location = new System.Drawing.Point(30, 180);
-            this.btnRegistrarResultado.Name = "btnRegistrarResultado";
-            this.btnRegistrarResultado.Size = new System.Drawing.Size(200, 40);
-            this.btnRegistrarResultado.TabIndex = 3;
-            this.btnRegistrarResultado.Text = "Registrar Resultado";
-            this.btnRegistrarResultado.UseVisualStyleBackColor = true;
-            this.btnRegistrarResultado.Click += new System.EventHandler(this.btnRegistrarResultado_Click);
-
+            // 
+            btnRegistrarResultado.Location = new Point(21, 150);
+            btnRegistrarResultado.Name = "btnRegistrarResultado";
+            btnRegistrarResultado.Size = new Size(200, 40);
+            btnRegistrarResultado.TabIndex = 3;
+            btnRegistrarResultado.Text = "Registrar Resultado";
+            btnRegistrarResultado.UseVisualStyleBackColor = true;
+            btnRegistrarResultado.Click += btnRegistrarResultado_Click;
+            // 
             // btnTablaPosiciones
-            this.btnTablaPosiciones.Location = new System.Drawing.Point(30, 230);
-            this.btnTablaPosiciones.Name = "btnTablaPosiciones";
-            this.btnTablaPosiciones.Size = new System.Drawing.Size(200, 40);
-            this.btnTablaPosiciones.TabIndex = 4;
-            this.btnTablaPosiciones.Text = "Tabla de Posiciones";
-            this.btnTablaPosiciones.UseVisualStyleBackColor = true;
-            this.btnTablaPosiciones.Click += new System.EventHandler(this.btnTablaPosiciones_Click);
-
+            // 
+            btnTablaPosiciones.Location = new Point(21, 196);
+            btnTablaPosiciones.Name = "btnTablaPosiciones";
+            btnTablaPosiciones.Size = new Size(200, 40);
+            btnTablaPosiciones.TabIndex = 4;
+            btnTablaPosiciones.Text = "Tabla de Posiciones";
+            btnTablaPosiciones.UseVisualStyleBackColor = true;
+            btnTablaPosiciones.Click += btnTablaPosiciones_Click;
+            // 
+            // gif1
+            // 
+            gif1.Location = new Point(236, -1);
+            gif1.Name = "gif1";
+            gif1.Size = new Size(448, 377);
+            gif1.TabIndex = 5;
+            gif1.TabStop = false;
+            // 
+            // btnOpciones
+            // 
+            btnOpciones.Location = new Point(21, 318);
+            btnOpciones.Name = "btnOpciones";
+            btnOpciones.Size = new Size(200, 40);
+            btnOpciones.TabIndex = 6;
+            btnOpciones.Text = "Más opciones";
+            btnOpciones.UseVisualStyleBackColor = true;
+            btnOpciones.Click += button1_Click;
+            // 
             // MainForm
-            this.ClientSize = new System.Drawing.Size(284, 311);
-            this.Controls.Add(this.btnRegistrarEquipo);
-            this.Controls.Add(this.btnRegistrarPartido);
-            this.Controls.Add(this.btnRegistrarJugador);
-            this.Controls.Add(this.btnRegistrarResultado);
-            this.Controls.Add(this.btnTablaPosiciones);
-            this.Name = "MainForm";
-            this.Text = "Sistema Campeonato";
-            this.Load += new System.EventHandler(this.MainForm_Load);
-
-            this.ResumeLayout(false);
+            // 
+            ClientSize = new Size(682, 370);
+            Controls.Add(btnOpciones);
+            Controls.Add(gif1);
+            Controls.Add(btnRegistrarEquipo);
+            Controls.Add(btnRegistrarPartido);
+            Controls.Add(btnRegistrarJugador);
+            Controls.Add(btnRegistrarResultado);
+            Controls.Add(btnTablaPosiciones);
+            Name = "MainForm";
+            Text = "Sistema Campeonato";
+            Load += MainForm_Load;
+            ((System.ComponentModel.ISupportInitialize)gif1).EndInit();
+            ResumeLayout(false);
         }
 
         private System.Windows.Forms.Button btnRegistrarEquipo;
@@ -87,5 +115,7 @@
         private System.Windows.Forms.Button btnRegistrarJugador;
         private System.Windows.Forms.Button btnRegistrarResultado;
         private System.Windows.Forms.Button btnTablaPosiciones;
+        private PictureBox gif1;
+        private Button btnOpciones;
     }
 }

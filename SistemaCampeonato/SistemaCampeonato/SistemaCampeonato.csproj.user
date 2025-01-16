@@ -4,6 +4,9 @@
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MasOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="RegistrarEquipoFormcs.cs">
       <SubType>Form</SubType>
     </Compile>
