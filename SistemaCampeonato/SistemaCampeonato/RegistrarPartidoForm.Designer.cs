@@ -3,11 +3,21 @@
     partial class RegistrarPartidoForm
     {
         private System.ComponentModel.IContainer components = null;
+
         private System.Windows.Forms.ComboBox cbEquipoLocal;
         private System.Windows.Forms.ComboBox cbEquipoVisitante;
         private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.TextBox txtHora;
         private System.Windows.Forms.Button btnGuardarPartido;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
         private void InitializeComponent()
         {
@@ -20,26 +30,28 @@
             // 
             // cbEquipoLocal
             // 
-            cbEquipoLocal.Items.AddRange(new object[] { "Seleccione el equipo local" });
-            cbEquipoLocal.Location = new Point(12, 12);
+            cbEquipoLocal.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbEquipoLocal.FormattingEnabled = true;
+            cbEquipoLocal.Location = new Point(44, 28);
             cbEquipoLocal.Name = "cbEquipoLocal";
-            cbEquipoLocal.Size = new Size(260, 23);
+            cbEquipoLocal.Size = new Size(176, 23);
             cbEquipoLocal.TabIndex = 0;
             // 
             // cbEquipoVisitante
             // 
-            cbEquipoVisitante.Items.AddRange(new object[] { "Seleccione el equipo visitante" });
-            cbEquipoVisitante.Location = new Point(12, 41);
+            cbEquipoVisitante.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbEquipoVisitante.FormattingEnabled = true;
+            cbEquipoVisitante.Location = new Point(44, 75);
             cbEquipoVisitante.Name = "cbEquipoVisitante";
-            cbEquipoVisitante.Size = new Size(260, 23);
+            cbEquipoVisitante.Size = new Size(176, 23);
             cbEquipoVisitante.TabIndex = 1;
             // 
             // txtFecha
             // 
             txtFecha.ForeColor = Color.Gray;
-            txtFecha.Location = new Point(12, 70);
+            txtFecha.Location = new Point(44, 122);
             txtFecha.Name = "txtFecha";
-            txtFecha.Size = new Size(260, 23);
+            txtFecha.Size = new Size(176, 23);
             txtFecha.TabIndex = 2;
             txtFecha.Text = "Fecha (YYYY-MM-DD)";
             txtFecha.Enter += TxtFecha_Enter;
@@ -48,9 +60,9 @@
             // txtHora
             // 
             txtHora.ForeColor = Color.Gray;
-            txtHora.Location = new Point(12, 99);
+            txtHora.Location = new Point(44, 169);
             txtHora.Name = "txtHora";
-            txtHora.Size = new Size(260, 23);
+            txtHora.Size = new Size(176, 23);
             txtHora.TabIndex = 3;
             txtHora.Text = "Hora (HH:MM)";
             txtHora.Enter += TxtHora_Enter;
@@ -58,16 +70,19 @@
             // 
             // btnGuardarPartido
             // 
-            btnGuardarPartido.Location = new Point(12, 128);
+            btnGuardarPartido.Location = new Point(44, 216);
             btnGuardarPartido.Name = "btnGuardarPartido";
-            btnGuardarPartido.Size = new Size(260, 23);
+            btnGuardarPartido.Size = new Size(175, 28);
             btnGuardarPartido.TabIndex = 4;
             btnGuardarPartido.Text = "Guardar Partido";
+            btnGuardarPartido.UseVisualStyleBackColor = true;
             btnGuardarPartido.Click += btnGuardarPartido_Click;
             // 
             // RegistrarPartidoForm
             // 
-            ClientSize = new Size(284, 161);
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(280, 281);
             Controls.Add(cbEquipoLocal);
             Controls.Add(cbEquipoVisitante);
             Controls.Add(txtFecha);
@@ -78,15 +93,6 @@
             Load += RegistrarPartidoForm_Load;
             ResumeLayout(false);
             PerformLayout();
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
         }
     }
 }

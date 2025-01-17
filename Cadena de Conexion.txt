@@ -1,1 +1,2 @@
 Server=localhost;Database=master;Trusted_Connection=True;
+DESKTOP-E124J3L

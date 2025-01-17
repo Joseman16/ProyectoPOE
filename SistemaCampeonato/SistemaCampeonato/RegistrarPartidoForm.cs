@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Data.Sql;
-using System.Data.SqlClient;
 
 namespace SistemaCampeonato
 {
@@ -12,12 +11,14 @@ namespace SistemaCampeonato
         private List<Partidos> partidos;
         private List<Equipo> equipos;
 
+        private readonly string connectionString = "Data Source=DESKTOP-E124J3L;Initial Catalog=SistemaCampeonato;Integrated Security=True";
+
         public RegistrarPartidoForm(List<Equipo> equipos, List<Partidos> partidos)
         {
             InitializeComponent();
-            this.equipos = equipos;
-            this.partidos = partidos;
-            CargarEquipos();
+            this.equipos = equipos ?? new List<Equipo>();
+            this.partidos = partidos ?? new List<Partidos>();
+            ObtenerEquiposDesdeBD(); // Cargar equipos al inicializar el formulario
         }
 
         private void CargarEquipos()
@@ -31,38 +32,116 @@ namespace SistemaCampeonato
                 cbEquipoVisitante.Items.Add(equipo.NombreEquipo);
             }
 
-            cbEquipoLocal.SelectedIndex = 0;
-            cbEquipoVisitante.SelectedIndex = 0;
+            if (cbEquipoLocal.Items.Count > 0) cbEquipoLocal.SelectedIndex = 0;
+            if (cbEquipoVisitante.Items.Count > 0) cbEquipoVisitante.SelectedIndex = 0;
+        }
+
+        private void ObtenerEquiposDesdeBD()
+        {
+            equipos.Clear(); // Limpiar la lista antes de cargar nuevos datos
+
+            try
+            {
+                using (var conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "SELECT IdEquipo, NombreEquipo FROM Equipo";
+
+                    using (var cmd = new SqlCommand(query, conn))
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            equipos.Add(new Equipo
+                            {
+                                IdEquipo = reader.GetInt32(0),
+                                NombreEquipo = reader.GetString(1)
+                            });
+                        }
+                    }
+                }
+
+                // Actualizar los ComboBox con los equipos cargados
+                CargarEquipos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar equipos desde la base de datos: {ex.Message}");
+            }
         }
 
         private void btnGuardarPartido_Click(object sender, EventArgs e)
         {
             if (cbEquipoLocal.SelectedItem == null || cbEquipoVisitante.SelectedItem == null ||
+                string.IsNullOrWhiteSpace(txtFecha.Text) || string.IsNullOrWhiteSpace(txtHora.Text) ||
                 txtFecha.Text == "Fecha (YYYY-MM-DD)" || txtHora.Text == "Hora (HH:MM)")
             {
                 MessageBox.Show("Por favor complete todos los campos.");
                 return;
             }
 
-            var partido = new Partidos
+            if (cbEquipoLocal.SelectedItem.ToString() == cbEquipoVisitante.SelectedItem.ToString())
             {
-                EquipoLocal = equipos.Find(e => e.NombreEquipo == cbEquipoLocal.SelectedItem.ToString()),
-                EquipoVisitante = equipos.Find(e => e.NombreEquipo == cbEquipoVisitante.SelectedItem.ToString()),
-                Fecha = DateTime.Parse(txtFecha.Text),
-                Hora = TimeSpan.Parse(txtHora.Text)
-            };
+                MessageBox.Show("El equipo local y visitante no pueden ser el mismo.");
+                return;
+            }
 
-            partidos.Add(partido);
-            MessageBox.Show("Partido registrado correctamente.");
-            this.Close();
+            try
+            {
+                var partido = new Partidos
+                {
+                    EquipoLocal = equipos.Find(e => e.NombreEquipo == cbEquipoLocal.SelectedItem.ToString()),
+                    EquipoVisitante = equipos.Find(e => e.NombreEquipo == cbEquipoVisitante.SelectedItem.ToString()),
+                    Fecha = DateTime.Parse(txtFecha.Text),
+                    Hora = TimeSpan.Parse(txtHora.Text)
+                };
+
+                partidos.Add(partido);
+                GuardarPartidoEnBD(partido);
+
+                MessageBox.Show("Partido registrado correctamente.");
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al registrar el partido: {ex.Message}");
+            }
+        }
+
+        private void GuardarPartidoEnBD(Partidos partido)
+        {
+            try
+            {
+                using (var conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = @"
+                        INSERT INTO Partidos (IdEquipoLocal, IdEquipoVisitante, Fecha, Hora)
+                        VALUES (@IdEquipoLocal, @IdEquipoVisitante, @Fecha, @Hora)";
+
+                    using (var cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IdEquipoLocal", partido.EquipoLocal.IdEquipo);
+                        cmd.Parameters.AddWithValue("@IdEquipoVisitante", partido.EquipoVisitante.IdEquipo);
+                        cmd.Parameters.AddWithValue("@Fecha", partido.Fecha);
+                        cmd.Parameters.AddWithValue("@Hora", partido.Hora);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al guardar el partido en la base de datos: {ex.Message}");
+            }
         }
 
         private void TxtFecha_Enter(object sender, EventArgs e)
         {
             if (txtFecha.Text == "Fecha (YYYY-MM-DD)")
             {
-                txtFecha.Text = "";
-                txtFecha.ForeColor = Color.Black;
+                txtFecha.Text = ""; // Limpiar el texto
+                txtFecha.ForeColor = Color.Black; // Cambiar el color del texto a negro
             }
         }
 
@@ -70,8 +149,8 @@ namespace SistemaCampeonato
         {
             if (string.IsNullOrWhiteSpace(txtFecha.Text))
             {
-                txtFecha.Text = "Fecha (YYYY-MM-DD)";
-                txtFecha.ForeColor = Color.Gray;
+                txtFecha.Text = "Fecha (YYYY-MM-DD)"; // Restaurar el texto de marcador
+                txtFecha.ForeColor = Color.Gray; // Cambiar el color del texto a gris
             }
         }
 
@@ -79,8 +158,8 @@ namespace SistemaCampeonato
         {
             if (txtHora.Text == "Hora (HH:MM)")
             {
-                txtHora.Text = "";
-                txtHora.ForeColor = Color.Black;
+                txtHora.Text = ""; // Limpiar el texto
+                txtHora.ForeColor = Color.Black; // Cambiar el color del texto a negro
             }
         }
 
@@ -88,8 +167,8 @@ namespace SistemaCampeonato
         {
             if (string.IsNullOrWhiteSpace(txtHora.Text))
             {
-                txtHora.Text = "Hora (HH:MM)";
-                txtHora.ForeColor = Color.Gray;
+                txtHora.Text = "Hora (HH:MM)"; // Restaurar el texto de marcador
+                txtHora.ForeColor = Color.Gray; // Cambiar el color del texto a gris
             }
         }
 
@@ -97,46 +176,5 @@ namespace SistemaCampeonato
         {
 
         }
-
-        private void ObtenerEquipos()
-        {
-            equipos.Clear(); // Limpiar la lista de equipos antes de cargar nuevos
-
-            try
-            {
-                // Establecer conexión a la base de datos
-                using (var conn = new SqlConnection("Data Source=DESKTOP-E124J3L;Initial Catalog=SistemaCampeonato;Integrated Security=True"))
-                {
-                    conn.Open();
-
-                    // Consulta SQL para obtener todos los equipos
-                    string query = "SELECT IdEquipo, NombreEquipo FROM Equipo";
-
-                    // Crear el comando SQL
-                    using (var cmd = new SqlCommand(query, conn))
-                    {
-                        using (var reader = cmd.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                var equipo = new Equipo
-                                {
-                                    IdEquipo = reader.GetInt32(0),
-                                    NombreEquipo = reader.GetString(1)
-                                };
-
-                                // Agregar el equipo a la lista de equipos
-                                equipos.Add(equipo);
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al obtener los equipos: {ex.Message}");
-            }
-        }
-
     }
 }
