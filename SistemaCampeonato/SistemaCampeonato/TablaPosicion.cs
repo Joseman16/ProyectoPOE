@@ -1,73 +1,59 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace SistemaCampeonato
 {
+    // Clase para representar la posición en la tabla
     public class TablaPosicion
     {
-        // Propiedad para el equipo asociado (de tipo Equipo)
-        public Equipo NombreEquipo { get; set; }
+        public Equipo Equipo { get; set; }
+        public int Puntos { get; set; }
+        public int GolesFavor { get; set; }
+        public int GolesEnContra { get; set; }
 
-        // Propiedad para los puntos del equipo
-        public int Puntos { get; private set; }
-
-        // Propiedad para los goles a favor
-        public int GolesFavor { get; private set; }
-
-        // Propiedad para los goles en contra
-        public int GolesEnContra { get; private set; }
-
-        // Constructor por defecto
-        public TablaPosicion()
+        public TablaPosicion(Equipo equipo)
         {
-        }
-
-        // Constructor con parámetros
-        public TablaPosicion(Equipo nombreEquipo)
-        {
-            NombreEquipo = nombreEquipo;
+            Equipo = equipo;
             Puntos = 0;
             GolesFavor = 0;
             GolesEnContra = 0;
         }
 
-        // Método para actualizar la tabla con un resultado
+        // Método para actualizar los datos de la tabla de posiciones
         public void ActualizarTabla(Resultados resultado)
         {
-            // Verificar si el equipo local es este equipo
-            if (resultado.Partido.EquipoLocal == NombreEquipo)
+            if (resultado.Partido.EquipoLocal.IdEquipo == Equipo.IdEquipo)
             {
                 GolesFavor += resultado.GolesEquipoLocal;
                 GolesEnContra += resultado.GolesEquipoVisitante;
-                if (resultado.EsEmpate)
-                {
-                    Puntos += 1; // 1 punto por empate
-                }
-                else if (resultado.EquipoGanador == NombreEquipo)
+
+                if (resultado.GolesEquipoLocal > resultado.GolesEquipoVisitante)
                 {
                     Puntos += 3; // 3 puntos por victoria
                 }
+                else if (resultado.GolesEquipoLocal == resultado.GolesEquipoVisitante)
+                {
+                    Puntos += 1; // 1 punto por empate
+                }
             }
-            // Verificar si el equipo visitante es este equipo
-            else if (resultado.Partido.EquipoVisitante == NombreEquipo)
+            else if (resultado.Partido.EquipoVisitante.IdEquipo == Equipo.IdEquipo)
             {
                 GolesFavor += resultado.GolesEquipoVisitante;
                 GolesEnContra += resultado.GolesEquipoLocal;
-                if (resultado.EsEmpate)
-                {
-                    Puntos += 1; // 1 punto por empate
-                }
-                else if (resultado.EquipoGanador == NombreEquipo)
+
+                if (resultado.GolesEquipoVisitante > resultado.GolesEquipoLocal)
                 {
                     Puntos += 3; // 3 puntos por victoria
+                }
+                else if (resultado.GolesEquipoVisitante == resultado.GolesEquipoLocal)
+                {
+                    Puntos += 1; // 1 punto por empate
                 }
             }
         }
 
-        // Método ToString para mostrar la información de la tabla de posiciones
         public override string ToString()
         {
-            return $"Equipo: {NombreEquipo.NombreEquipo}, Puntos: {Puntos}, Goles a Favor: {GolesFavor}, Goles en Contra: {GolesEnContra}";
+            return $"{Equipo.NombreEquipo} - Puntos: {Puntos}, Goles a favor: {GolesFavor}, Goles en contra: {GolesEnContra}";
         }
     }
 }

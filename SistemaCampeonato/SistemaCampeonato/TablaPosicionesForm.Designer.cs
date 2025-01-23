@@ -18,6 +18,7 @@
             dgvTablaPosiciones.Name = "dgvTablaPosiciones";
             dgvTablaPosiciones.Size = new Size(360, 237);
             dgvTablaPosiciones.TabIndex = 0;
+            dgvTablaPosiciones.CellContentClick += dgvTablaPosiciones_CellContentClick;
             // 
             // TablaPosicionesForm
             // 

@@ -60,13 +60,6 @@ namespace SistemaCampeonato
 
         private void btnRegistrarResultado_Click(object sender, EventArgs e)
         {
-            // Abre el formulario para registrar resultados
-            if (partidos.Count == 0)
-            {
-                MessageBox.Show("No hay partidos registrados.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             RegistrarResultadoForm formRegistrarResultado = new RegistrarResultadoForm(partidos, tablaPosiciones);
             formRegistrarResultado.ShowDialog();
         }
@@ -74,7 +67,7 @@ namespace SistemaCampeonato
         private void btnTablaPosiciones_Click(object sender, EventArgs e)
         {
             // Mostrar la tabla de posiciones
-            TablaPosicionesForm tablaPosicionesForm = new TablaPosicionesForm(tablaPosiciones);
+            TablaPosicionesForm tablaPosicionesForm = new TablaPosicionesForm();
             tablaPosicionesForm.ShowDialog();
         }
 
