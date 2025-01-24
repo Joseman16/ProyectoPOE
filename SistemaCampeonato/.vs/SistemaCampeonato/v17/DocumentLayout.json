@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\tablaposicionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\tablaposicionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\registrarequipoformcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\registrarequipoformcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\tablaposicionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\tablaposicionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\registrarequipoformcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\registrarequipoformcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\tablaposicion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\tablaposicion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\tablaposicionesform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\tablaposicionesform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\resultados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\resultados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\tablaposicionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\tablaposicionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\registrarresultadoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,12 +39,16 @@
       "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\registrarpartidoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\registrarresultadoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\sistemacampeonato\\registrarresultadoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\registrarresultadoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\resultados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\resultados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\registrarresultadoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\registrarresultadoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\sistemacampeonato\\tablaposicionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|solutionrelative:sistemacampeonato\\tablaposicionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7F09E5D-44A8-4785-AE0B-3457CF7457E9}|SistemaCampeonato\\SistemaCampeonato.csproj|c:\\users\\josman\\desktop\\tareas ug\\proyectopoe\\sistemacampeonato\\sistemacampeonato\\equipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,11 +74,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "RegistrarPartidoForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarPartidoForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarPartidoForm.cs",
@@ -74,21 +90,76 @@
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegistrarEquipoFormcs.cs",
+              "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarEquipoFormcs.cs",
+              "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarEquipoFormcs.cs",
+              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarEquipoFormcs.cs",
+              "RelativeToolTip": "SistemaCampeonato\\RegistrarEquipoFormcs.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwEoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T03:23:13.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegistrarEquipoFormcs.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarEquipoFormcs.cs",
+              "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarEquipoFormcs.cs",
+              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarEquipoFormcs.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaCampeonato\\RegistrarEquipoFormcs.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T03:23:09.672Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "TablaPosicionesForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\TablaPosicionesForm.Designer.cs",
+              "RelativeDocumentMoniker": "SistemaCampeonato\\TablaPosicionesForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\TablaPosicionesForm.Designer.cs",
+              "RelativeToolTip": "SistemaCampeonato\\TablaPosicionesForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T03:16:51.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegistrarResultadoForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarResultadoForm.Designer.cs",
+              "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarResultadoForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarResultadoForm.Designer.cs",
+              "RelativeToolTip": "SistemaCampeonato\\RegistrarResultadoForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T03:10:06.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\MainForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\MainForm.cs",
               "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\MainForm.cs",
               "RelativeToolTip": "SistemaCampeonato\\MainForm.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCcAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wCYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T17:36:16.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Equipo.cs",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\Equipo.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\Equipo.cs",
@@ -96,12 +167,11 @@
               "RelativeToolTip": "SistemaCampeonato\\Equipo.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAwwBkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T17:25:22.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T17:25:22.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Resultados.cs",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\Resultados.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\Resultados.cs",
@@ -114,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "RegistrarResultadoForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarResultadoForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarResultadoForm.cs",
@@ -132,27 +202,27 @@
               "RelativeDocumentMoniker": "SistemaCampeonato\\TablaPosicion.cs",
               "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\TablaPosicion.cs",
               "RelativeToolTip": "SistemaCampeonato\\TablaPosicion.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwDkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAmwBEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T16:50:09.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "TablaPosicionesForm.cs",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\TablaPosicionesForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\TablaPosicionesForm.cs",
               "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\TablaPosicionesForm.cs",
               "RelativeToolTip": "SistemaCampeonato\\TablaPosicionesForm.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAMwE4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T16:48:02.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "TablaPosicionesForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\TablaPosicionesForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\TablaPosicionesForm.cs",
@@ -164,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Partidos.cs",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\Partidos.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\Partidos.cs",
@@ -172,45 +242,42 @@
               "RelativeToolTip": "SistemaCampeonato\\Partidos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T14:23:26.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T14:23:26.823Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "RegistrarResultadoForm.cs",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarResultadoForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarResultadoForm.cs",
               "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarResultadoForm.cs",
               "RelativeToolTip": "SistemaCampeonato\\RegistrarResultadoForm.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAowLoAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAowLoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T14:22:39.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "RegistrarJugadorForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarJugadorForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\RegistrarJugadorForm.cs",
               "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\RegistrarJugadorForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "SistemaCampeonato\\RegistrarJugadorForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T20:35:26.034Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-01-16T20:35:26.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "MainForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\MainForm.cs",
               "RelativeDocumentMoniker": "SistemaCampeonato\\MainForm.cs",
               "ToolTip": "C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\SistemaCampeonato\\SistemaCampeonato\\MainForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "SistemaCampeonato\\MainForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T09:25:36.312Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-01-09T09:25:36.312Z"
             }
           ]
         }

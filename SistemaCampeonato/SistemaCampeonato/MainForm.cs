@@ -37,12 +37,15 @@ namespace SistemaCampeonato
             // Actualizar la tabla de posiciones con los nuevos equipos
             foreach (var equipo in equipos)
             {
-                if (!tablaPosiciones.Exists(tp => tp.NombreEquipo == equipo))
+                // Verificar si el equipo ya existe en la tabla de posiciones
+                if (!tablaPosiciones.Exists(tp => tp.Equipo.NombreEquipo == equipo.NombreEquipo))
                 {
+                    // Si no existe, agregarlo
                     tablaPosiciones.Add(new TablaPosicion(equipo));
                 }
             }
         }
+
 
         private void btnRegistrarPartido_Click(object sender, EventArgs e)
         {
