@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaCampeonato")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ffcd78bd3c98d220270e811a72e55fa465bedbf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14c36f34d447b73a44f0f99d53399a69ee46f245")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaCampeonato")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaCampeonato")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
