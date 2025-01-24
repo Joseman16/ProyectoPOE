@@ -28,5 +28,17 @@ namespace SistemaCampeonato
             gif2.Image = Image.FromFile("C:\\Users\\Josman\\Desktop\\Tareas UG\\ProyectoPOE\\equipo2.gif");
             gif2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ActualizarEliminarJugadorForm formActualizarEliminarJugador = new ActualizarEliminarJugadorForm();
+            formActualizarEliminarJugador.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ActualizarEliminarEquipoForm formActualizarEliminarEquipo = new ActualizarEliminarEquipoForm();
+            formActualizarEliminarEquipo.ShowDialog();
+        }
     }
 }

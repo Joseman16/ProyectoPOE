@@ -23,29 +23,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBoxTablaPosiciones = new System.Windows.Forms.ListBox();
-            this.SuspendLayout();
+            listBoxTablaPosiciones = new ListBox();
+            SuspendLayout();
             // 
             // listBoxTablaPosiciones
             // 
-            this.listBoxTablaPosiciones.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxTablaPosiciones.FormattingEnabled = true;
-            this.listBoxTablaPosiciones.ItemHeight = 15;
-            this.listBoxTablaPosiciones.Location = new System.Drawing.Point(0, 0);
-            this.listBoxTablaPosiciones.Name = "listBoxTablaPosiciones";
-            this.listBoxTablaPosiciones.Size = new System.Drawing.Size(800, 450);
-            this.listBoxTablaPosiciones.TabIndex = 0;
+            listBoxTablaPosiciones.Dock = DockStyle.Fill;
+            listBoxTablaPosiciones.FormattingEnabled = true;
+            listBoxTablaPosiciones.ItemHeight = 15;
+            listBoxTablaPosiciones.Location = new Point(0, 0);
+            listBoxTablaPosiciones.Name = "listBoxTablaPosiciones";
+            listBoxTablaPosiciones.Size = new Size(800, 450);
+            listBoxTablaPosiciones.TabIndex = 0;
+            listBoxTablaPosiciones.SelectedIndexChanged += listBoxTablaPosiciones_SelectedIndexChanged;
             // 
             // TablaPosicionesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBoxTablaPosiciones);
-            this.Name = "TablaPosicionesForm";
-            this.Text = "Tabla de Posiciones";
-            this.Load += new System.EventHandler(this.TablaPosicionesForm_Load);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(listBoxTablaPosiciones);
+            Name = "TablaPosicionesForm";
+            Text = "Tabla de Posiciones";
+            Load += TablaPosicionesForm_Load;
+            ResumeLayout(false);
         }
     }
 }

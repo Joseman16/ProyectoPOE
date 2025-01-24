@@ -27,6 +27,7 @@
             // 
             // btnRegistrarEquipo
             // 
+            btnRegistrarEquipo.Cursor = Cursors.Hand;
             btnRegistrarEquipo.Location = new Point(21, 12);
             btnRegistrarEquipo.Name = "btnRegistrarEquipo";
             btnRegistrarEquipo.Size = new Size(200, 40);
@@ -37,6 +38,7 @@
             // 
             // btnRegistrarPartido
             // 
+            btnRegistrarPartido.Cursor = Cursors.Hand;
             btnRegistrarPartido.Location = new Point(21, 104);
             btnRegistrarPartido.Name = "btnRegistrarPartido";
             btnRegistrarPartido.Size = new Size(200, 40);
@@ -47,6 +49,7 @@
             // 
             // btnRegistrarJugador
             // 
+            btnRegistrarJugador.Cursor = Cursors.Hand;
             btnRegistrarJugador.Location = new Point(21, 58);
             btnRegistrarJugador.Name = "btnRegistrarJugador";
             btnRegistrarJugador.Size = new Size(200, 40);
@@ -57,6 +60,7 @@
             // 
             // btnRegistrarResultado
             // 
+            btnRegistrarResultado.Cursor = Cursors.Hand;
             btnRegistrarResultado.Location = new Point(21, 150);
             btnRegistrarResultado.Name = "btnRegistrarResultado";
             btnRegistrarResultado.Size = new Size(200, 40);
@@ -67,6 +71,7 @@
             // 
             // btnTablaPosiciones
             // 
+            btnTablaPosiciones.Cursor = Cursors.Hand;
             btnTablaPosiciones.Location = new Point(21, 196);
             btnTablaPosiciones.Name = "btnTablaPosiciones";
             btnTablaPosiciones.Size = new Size(200, 40);
@@ -82,9 +87,11 @@
             gif1.Size = new Size(448, 377);
             gif1.TabIndex = 5;
             gif1.TabStop = false;
+            gif1.Click += gif1_Click;
             // 
             // btnOpciones
             // 
+            btnOpciones.Cursor = Cursors.Hand;
             btnOpciones.Location = new Point(21, 318);
             btnOpciones.Name = "btnOpciones";
             btnOpciones.Size = new Size(200, 40);

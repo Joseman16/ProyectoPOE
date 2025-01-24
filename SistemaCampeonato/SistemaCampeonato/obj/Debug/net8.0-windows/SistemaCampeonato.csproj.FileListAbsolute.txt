@@ -92,3 +92,5 @@ C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonat
 C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaC.04BADB0A.Up2Date
 C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.MasOpciones.resources
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.ActualizarEliminarJugadorForm.resources
+C:\Users\Josman\Desktop\Tareas UG\ProyectoPOE\SistemaCampeonato\SistemaCampeonato\obj\Debug\net8.0-windows\SistemaCampeonato.ActualizarEliminarEquipoForm.resources

@@ -56,37 +56,55 @@ namespace SistemaCampeonato
         {
             try
             {
+                // Validar que los datos del equipo no estén vacíos
+                if (string.IsNullOrWhiteSpace(equipo.NombreEquipo) || string.IsNullOrWhiteSpace(equipo.NombreFacultad))
+                {
+                    throw new ArgumentException("El nombre del equipo y la facultad no pueden estar vacíos.");
+                }
+
                 // Abrir conexión a la base de datos
-                conn.Open();
+                if (conn.State != System.Data.ConnectionState.Open)
+                {
+                    conn.Open();
+                }
 
                 // Consulta SQL para insertar un equipo
                 string query = @"
-                    INSERT INTO Equipo (NombreEquipo, NombreFacultad)
-                    OUTPUT INSERTED.IdEquipo
-                    VALUES (@NombreEquipo, @NombreFacultad)";
+            INSERT INTO Equipo (NombreEquipo, NombreFacultad)
+            OUTPUT INSERTED.IdEquipo
+            VALUES (@NombreEquipo, @NombreFacultad)";
 
                 // Crear el comando SQL
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    // Agregar parámetros
-                    cmd.Parameters.AddWithValue("@NombreEquipo", equipo.NombreEquipo);
-                    cmd.Parameters.AddWithValue("@NombreFacultad", equipo.NombreFacultad);
+                    // Agregar parámetros usando el tipo de datos correcto
+                    cmd.Parameters.Add("@NombreEquipo", System.Data.SqlDbType.NVarChar).Value = equipo.NombreEquipo;
+                    cmd.Parameters.Add("@NombreFacultad", System.Data.SqlDbType.NVarChar).Value = equipo.NombreFacultad;
 
                     // Ejecutar la consulta y obtener el Id del equipo insertado
                     equipo.IdEquipo = (int)cmd.ExecuteScalar();
 
+                    // Confirmación al usuario
                     MessageBox.Show($"Equipo registrado correctamente con ID: {equipo.IdEquipo}");
                 }
             }
+            catch (SqlException sqlEx)
+            {
+                // Manejo de errores específicos de SQL
+                MessageBox.Show($"Error de base de datos: {sqlEx.Message}", "Error SQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             catch (Exception ex)
             {
-                // Mostrar mensaje de error
-                MessageBox.Show($"Error al registrar el equipo: {ex.Message}");
+                // Manejo de errores generales
+                MessageBox.Show($"Error al registrar el equipo: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
                 // Cerrar la conexión a la base de datos
-                conn.Close();
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                }
             }
         }
 

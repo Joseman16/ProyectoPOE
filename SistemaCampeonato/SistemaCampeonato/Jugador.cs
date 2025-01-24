@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaCampeonato
 {
@@ -23,6 +19,9 @@ namespace SistemaCampeonato
         // Propiedad para el equipo del jugador
         public Equipo Equipo { get; set; }
 
+        // Constructor vacío (necesario para inicializaciones sin parámetros)
+        public Jugador() { }
+
         // Constructor para inicializar los atributos
         public Jugador(string cedula, string nombre, int dorsal, Posicion posicion, Equipo equipo)
         {
@@ -30,13 +29,13 @@ namespace SistemaCampeonato
             Nombre = nombre;
             Dorsal = dorsal;
             Posicion = posicion;
-            Equipo = equipo;  // Cambié 'equipo' a 'Equipo'
+            Equipo = equipo;
         }
 
         // Método ToString para mostrar la información del jugador de manera legible
         public override string ToString()
         {
-            return $"Cédula: {Cedula}, Nombre: {Nombre}, Dorsal: {Dorsal}, Posición: {Posicion.Nombre}, Equipo: {Equipo.NombreEquipo}";  // Cambié 'Equipo' a 'Equipo.NombreEquipo'
+            return $"Cédula: {Cedula}, Nombre: {Nombre}, Dorsal: {Dorsal}, Posición: {Posicion?.Nombre}, Equipo: {Equipo?.NombreEquipo}";
         }
     }
 }

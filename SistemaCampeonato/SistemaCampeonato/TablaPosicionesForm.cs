@@ -85,5 +85,10 @@ namespace SistemaCampeonato
                 posicion++;
             }
         }
+
+        private void listBoxTablaPosiciones_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

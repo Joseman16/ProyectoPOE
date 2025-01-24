@@ -12,6 +12,7 @@ namespace SistemaCampeonato
 
         public MainForm()
         {
+            this.Hide();
             this.BackColor = Color.LightBlue;
             InitializeComponent();
         }
@@ -76,8 +77,20 @@ namespace SistemaCampeonato
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MasOpciones maOP = new MasOpciones();
-            maOP.ShowDialog();
+            this.Hide(); // Oculta el formulario principal
+
+            using (MasOpciones maOP = new MasOpciones())
+            {
+                maOP.ShowDialog(); // Abre el formulario secundario de manera modal
+            }
+
+            this.Show(); // Muestra el formulario principal una vez que el secundario se cierra
+
+        }
+
+        private void gif1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
